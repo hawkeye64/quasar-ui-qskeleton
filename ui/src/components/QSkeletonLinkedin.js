@@ -1,13 +1,13 @@
 // Util
-import props from '../../utils/props.js'
+import props from '../utils/props.js'
 
-import SkeletonBase from '../../mixins/skeleton-base'
+import QSkeleton from './QSkeleton.js'
 
 export default {
-  name: 'Instagram',
+  name: 'QSkeletonLinkedin',
 
   mixins: [
-    SkeletonBase
+    QSkeleton
   ],
 
   props: {

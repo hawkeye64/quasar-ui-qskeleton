@@ -34,9 +34,10 @@
     "open": "^7.0.0",
     "postcss": "^7.0.23",
     "postcss-rtl": "^1.5.0",
-    "quasar": "^1.5.2",
+    "quasar": "^1.5.5",
+    "quasar-json-api": "^0.0.12",
     "rimraf": "^3.0.0",
-    "rollup": "^1.27.6",
+    "rollup": "^1.27.8",
     "rollup-plugin-node-resolve": "^5.2.0",
     "uglify-es": "^3.3.9",
     "zlib": "^1.0.5"

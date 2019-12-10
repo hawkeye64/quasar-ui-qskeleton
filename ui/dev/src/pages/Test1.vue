@@ -6,35 +6,43 @@
         <q-separator color="blue" class="q-mb-md" />
         <q-skeleton rtl />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="bullet-list" />
+
+        <q-skeleton-bullet-list />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="bullet-list" rtl />
+        <q-skeleton-bullet-list rtl />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="code" />
+
+        <q-skeleton-code />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="code" rtl />
+        <q-skeleton-code rtl />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="facebook" />
+
+        <q-skeleton-facebook />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="facebook" rtl />
+        <q-skeleton-facebook rtl />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="instagram" />
+
+        <q-skeleton-instagram />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="instagram" rtl />
+        <q-skeleton-instagram rtl />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="linkedin" />
+
+        <q-skeleton-linkedin />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="linkedin" rtl />
+        <q-skeleton-linkedin rtl />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="table" />
+
+        <q-skeleton-table />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="table" rtl />
+        <q-skeleton-table rtl />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="twitch" />
+
+        <q-skeleton-twitch />
         <q-separator color="blue" class="q-mb-md" />
-        <q-skeleton view="twitch" rtl />
+        <q-skeleton-twitch rtl />
         <q-separator color="blue" class="q-mb-md" />
-        <h1>Customizing</h1>
+
+        <h4>Customizing</h4>
         <q-separator color="blue" class="q-mb-md" />
         <q-skeleton :width="computedWidth" :height="computedHeight">
           <template v-for="r in rows">
@@ -45,6 +53,14 @@
         </q-skeleton>
         <q-separator color="blue" class="q-mb-md" />
         <q-skeleton :width="computedWidth" :height="computedHeight" style="--skeleton-primary-color: #FF0000; --skeleton-secondary-color: #00FF00">
+          <template v-for="r in rows">
+            <template v-for="c in columns">
+              <rect :key="r + '_' + c" :x="xPos(c)" :y="yPos(r)" rx="3" ry="3" :width="90" :height="90" />
+            </template>
+          </template>
+        </q-skeleton>
+        <q-separator color="blue" class="q-mb-md" />
+        <q-skeleton rtl :width="computedWidth" :height="computedHeight" style="--skeleton-primary-color: #FF0000; --skeleton-secondary-color: #00FF00">
           <template v-for="r in rows">
             <template v-for="c in columns">
               <rect :key="r + '_' + c" :x="xPos(c)" :y="yPos(r)" rx="3" ry="3" :width="90" :height="90" />
@@ -84,9 +100,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass" scoped>
-.directive-target
-  width: 50px
-  height: 50px
-</style>

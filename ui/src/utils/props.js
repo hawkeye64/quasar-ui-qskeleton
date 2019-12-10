@@ -1,4 +1,5 @@
 export default {
+  value: Boolean,
   rtl: Boolean,
   duration: {
     type: [Number, String],
