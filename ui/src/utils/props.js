@@ -12,13 +12,5 @@ export default {
   height: {
     type: [Number, String],
     default: 110
-  },
-  rows: {
-    type: [Number, String],
-    default: 5
-  },
-  columns: {
-    type: [Number, String],
-    default: 5
   }
 }

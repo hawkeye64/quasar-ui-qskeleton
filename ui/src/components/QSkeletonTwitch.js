@@ -1,13 +1,13 @@
 // Util
 import props from '../utils/props.js'
 
-import QSkeleton from './QSkeleton.js'
+import _skeleton from './_skeleton.js'
 
 export default {
   name: 'QSkeletonTwitch',
 
   mixins: [
-    QSkeleton
+    _skeleton
   ],
 
   props: {

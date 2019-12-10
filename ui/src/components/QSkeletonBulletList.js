@@ -1,17 +1,21 @@
 // Util
 import props from '../utils/props.js'
 
-import QSkeleton from './QSkeleton.js'
+import _skeleton from './_skeleton.js'
 
 export default {
   name: 'QSkeletonBulletList',
 
   mixins: [
-    QSkeleton
+    _skeleton
   ],
 
   props: {
-    ...props
+    ...props,
+    rows: {
+      type: [Number, String],
+      default: 5
+    }
   },
 
   computed: {

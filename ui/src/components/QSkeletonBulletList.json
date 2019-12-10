@@ -1,3 +1,15 @@
 {
-  "mixins": [ "components/QSkeleton" ]
+  "mixins": [ "components/_skeleton" ],
+  "props": {
+    "rows": {
+      "type": ["Number", "String"],
+      "default": 5,
+      "category": "behavior",
+      "desc": "The number of rows to be displayed",
+      "examples": [
+        ":rows=\"7\"",
+        "rows=\"3\""
+      ]
+    }
+  }
 }

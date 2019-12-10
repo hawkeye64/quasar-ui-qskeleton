@@ -2,9 +2,6 @@
   "meta": {
     "docsUrl": "https://quasarframework.github.io/quasar-ui-qskeleton/docs"
   },
-  "behavior": {
-    "$listeners": true
-  },
   "props": {
     "rtl": {
       "type": "Boolean",
